@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.13000e23.css","mappings":"AAAA,QAII,mBAHA,aACA,mBAIA","sources":["App.scss"],"sourcesContent":[".charts {\n    display: flex;\n    flex-direction: row;\n\n    align-items: center;\n\n    width: 50%\n}"],"names":[],"sourceRoot":""}
