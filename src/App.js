@@ -56,9 +56,16 @@ export default function App() {
   dataReader.readCountries();
 
   return (
-    <div className="charts">
-      <GDPChart dataReader={dataReader} />
-      <IncomeChart dataReader={dataReader} />
-    </div>
+    <>
+      <div className="content">
+        <h1>How does education effect wealth in different countries?</h1>
+        <span>By Caden Marinozzi, Sebastion Gillmore, and Sebastion Kauh</span>
+        <div className="divider" />
+      </div>
+      <div className="charts">
+        <GDPChart dataReader={dataReader} />
+        <IncomeChart dataReader={dataReader} />
+      </div>
+    </>
   );
 }
