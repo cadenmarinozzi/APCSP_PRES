@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/cadenmarinozzi.github.io/APCSP_PRES/static/css/main.13000e23.css",
-    "main.js": "/cadenmarinozzi.github.io/APCSP_PRES/static/js/main.bec8c82a.js",
+    "main.css": "/cadenmarinozzi.github.io/APCSP_PRES/static/css/main.b8a34c27.css",
+    "main.js": "/cadenmarinozzi.github.io/APCSP_PRES/static/js/main.a2c3f3e8.js",
     "index.html": "/cadenmarinozzi.github.io/APCSP_PRES/index.html",
-    "main.13000e23.css.map": "/cadenmarinozzi.github.io/APCSP_PRES/static/css/main.13000e23.css.map",
-    "main.bec8c82a.js.map": "/cadenmarinozzi.github.io/APCSP_PRES/static/js/main.bec8c82a.js.map"
+    "main.b8a34c27.css.map": "/cadenmarinozzi.github.io/APCSP_PRES/static/css/main.b8a34c27.css.map",
+    "main.a2c3f3e8.js.map": "/cadenmarinozzi.github.io/APCSP_PRES/static/js/main.a2c3f3e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.13000e23.css",
-    "static/js/main.bec8c82a.js"
+    "static/css/main.b8a34c27.css",
+    "static/js/main.a2c3f3e8.js"
   ]
 }
