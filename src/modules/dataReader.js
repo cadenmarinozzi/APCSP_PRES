@@ -4,34 +4,38 @@ export default class DataReader {
     this.readerPosition = 0;
   }
 
+  readLabel() {
+    this.labels.push(this.lines[this.readerPosition++]);
+  }
+
   readLabels(n) {
-    const labels = [];
+    this.labels = [];
 
     for (let i = 0; i < n; i++) {
-      labels.push(this.lines[this.readerPosition++]);
+      this.readLabel();
     }
+  }
 
-    this.labels = labels;
+  readCountry() {
+    const countryData = {};
+
+    const country = this.lines[this.readerPosition++];
+    const gdp = this.lines[this.readerPosition++];
+    const income = this.lines[this.readerPosition++];
+    const literacy = this.lines[this.readerPosition++];
+
+    countryData.gdp = gdp;
+    countryData.income = income;
+    countryData.literacy = literacy;
+
+    this.countries[country] = countryData;
   }
 
   readCountries() {
-    const countries = {};
+    this.countries = {};
 
     while (this.readerPosition < this.lines.length) {
-      const countryData = {};
-
-      const country = this.lines[this.readerPosition++];
-      const gdp = this.lines[this.readerPosition++];
-      const income = this.lines[this.readerPosition++];
-      const literacy = this.lines[this.readerPosition++];
-
-      countryData.gdp = gdp;
-      countryData.income = income;
-      countryData.literacy = literacy;
-
-      countries[country] = countryData;
+      this.readCountry();
     }
-
-    this.countries = countries;
   }
 }
